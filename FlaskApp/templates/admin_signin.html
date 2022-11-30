@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block head %}
+<title> Task Master</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+   <div class="row vh justify-content-center">
+       <div class="col-md-5">
+           <div class="row justify-content-center mb-6">
+               <h1>Registration <Form></Form></h1>
+           </div>
+           <form action="" method="post">
+               <div class="mb-6 form-group">
+                   <label for="firstname" class="form-label"> First Name</label>
+                   <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter firstname">
+               </div>
+               <div class="mb-6 form-group">
+                   <label for="lastname" class="form-label"> Last Name</label>
+                   <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Enter lastname">
+               </div>
+               <div class="mb-6 form-group">
+                   <label for="email" class="form-label"> Email Adress</label>
+                   <input type="email" class="form-control" id="email" name="email" aria-describedby="emailhelp" placeholder="Enter email">
+               </div>
+               <div class="mb-6 form-group">
+                   <label for="password1" class="form-label"> Password</label>
+                   <input type="password" class="form-control" name="password1" id="password1" placeholder="Enter password">
+               </div>
+               <div class="mb-6 form-group">
+                   <label for="password2" class="form-label"> Confirm Password</label>
+                   <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirm password">
+               </div>
+               <button type="submit" class="btn btn-success w-100">Register</button>
+           </form>
+           <p class="mb-0 text-center">Already registered? <a href = "{{ url_for('login') }}">Login</a></p>
+       </div>
+   </div>
+</div>
+{% endblock content%}

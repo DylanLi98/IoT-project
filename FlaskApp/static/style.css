@@ -1,0 +1,163 @@
+#panelBtn {
+  background-color: blue;
+  color: white;
+  width: 200px;
+  height: 50px;
+}
+.table-container {
+  /* background-color:y */
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.home-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.panel-title {
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(48, 18, 218);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: calc(100% / 5); /* Five links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: cyan;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+/* Reporting page styling*/
+li { 
+    display: inline;
+    margin: 20px;
+    font-size: medium;
+  }
+
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+/* Water Power nav Bar */
+  .ul2 {
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(255, 255, 255); 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,.2);
+    /* border-radius: 5%; */
+
+  } 
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:  rgb(202, 202, 202);
+    color: rgb(84, 84, 84);
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+    width: 90%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    /* margin-right: 50px; */
+    /* width: 125%; */
+    /* border-radius: 5%; */
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: rgb(84, 84, 84);
+
+  }
+ 
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(73, 73, 73, 0.5);
+    z-index: 1;
+    color: rgb(84, 84, 84); 
+    /* width: 65%; */
+  }
+
+
+  .dropdown-content input {
+     background-color:  rgb(197, 197, 197);
+     color:rgb(84, 84, 84);
+     padding: 12px;
+     width: 100%;
+     font-size: 16px;
+     box-align: left;
+     border: none;
+     color: rgb(84, 84, 84);
+
+  }
+
+.on {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+.off {
+    background-color: blue !important;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content input:hover {background-color: rgb(150, 150, 150);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #949494;}
+
+
+
+
+.chart {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+} 

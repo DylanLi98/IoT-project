@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="">
+	
+</div>
+<div class="">
+	<img src="{{ url_for('static', filename='img/bprint.jpeg')}}" class="home-img" alt="...">
+</div>
+<div class="panel-title">
+	<h1> Lamps Panell </h1>
+</div>
+<div class="table-container" >
+    <button class="button {{ session['Brd1-Ceiling'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd1-Ceiling'" >Brd1-Ceiling</button>
+    <button class="button {{ session['Brd1-Lamp1'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd1-Lamp1'" >Brd1-Lamp1</button>
+    <button class="button {{ session['Brd1-Lamp2'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd1-Lamp2'" >Brd1-Lamp2</button>
+    <button class="button {{ session['Living-Room-Ceiling'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Living-Room-Ceiling'" >Living-Room-Ceiling</button>
+    <button class="button {{ session['Bathroom1'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Bathroom1'" >Bathroom1</button>
+
+
+    <button class="button {{ session['Brd2-Ceiling'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd2-Ceiling'" >Brd2-Ceiling</button>
+    <button class="button {{ session['Brd2-Lamp1'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd2-Lamp1'" >Brd2-Lamp1</button>
+    <button class="button {{ session['Brd2-Lamp2'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd2-Lamp2'" >Brd2-Lamp2</button>
+    <button class="button {{ session['Living-Room-Lamp1'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Living-Room-Lamp1'" >Living-Room-Lamp1</button>
+    <button class="button {{ session['Bathroom2'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Bathroom2'" >Bathroom2</button>
+	
+	<button class="button {{ session['Brd3-Ceiling'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd3-Ceiling'" >Brd3-Ceiling</button>
+    <button class="button {{ session['Brd3-Lamp1'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd3-Lamp1'" >Brd3-Lamp1</button>
+    <button class="button {{ session['Brd3-Lamp2'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Brd3-Lamp2'" >Brd3-Lamp2</button>
+    <button class="button {{ session['Living-Room-Lamp2'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Living-Room-Lamp2'" >Living-Room-Lamp2</button>
+    <button class="button {{ session['Kitchen-Lamp'] }}" id="panelBtn" onclick="location.href='http://127.0.0.1:5000/setState/Kitchen-Lamp'" >Kitchen-Lamp</button>
+
+{#	<button class="button" id="panelBtn" name="Brd3-Ceiling" onclick="lightControl('Brd3-Ceiling')">Brd3-Ceiling</button>#}
+{#	<button class="button" id="panelBtn" name="Brd3-Lamp1" onclick="lightControl('Brd3-Lamp1')">Brd3-Lamp1</button>#}
+{#	<button class="button" id="panelBtn" name="Brd3-Lamp2" onclick="lightControl('Brd3-Lamp2')">Brd3-Lamp2</button>#}
+{#	<button class="button" id="panelBtn" name="Living-Room-Lamp2" onclick="lightControl('Living Room-Lamp2')">Living Room-Lamp2</button>#}
+{#	<button class="button" id="panelBtn" name="Kitchen-Lamp" onclick="lightControl('Kitchen-Lamp')">Kitchen-Lamp</button>#}
+		
+</div>
+{% endblock content%}

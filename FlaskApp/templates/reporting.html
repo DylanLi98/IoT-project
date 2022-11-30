@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Water Dropdown Button -->
+    <div class="ul2">
+        <div class="dropdown">
+            <button class="dropbtn">Water</button>
+            <div class="dropdown-content">
+                <input type="button" value="Past Day" onclick="add_Water('day', 'Hour: ')">
+                <input type="button" value="Past Week" onclick="add_Water('week', 'Day: ')">
+                <input type="button" value="Past Month" onclick="add_Water('month', 'Day: ')">
+                <input type="button" value="Past Two Months" onclick="add_Water('2month', 'Day: ')">
+                <input type="button" value="Next Month" onclick="add_Future_Water()">
+            </div>
+        </div>
+
+<!-- Power Dropdown Button -->
+        <div class="dropdown">
+            <button class="dropbtn">Power</button>
+            <div class="dropdown-content">
+                <input type="button" value="Past Day" onclick="add_Power('day', 'Hour: ')">
+                <input type="button" value="Past Week" onclick="add_Power('week', 'Day: ')">
+                <input type="button" value="Past Month" onclick="add_Power('month', 'Day: ')">
+                <input type="button" value="Past Two Months" onclick="add_Power('2month', 'Day: ')">
+                <input type="button" value="Next Month" onclick="add_Future_Power()">
+            </div>
+        </div>
+
+    </div>
+
+<!-- Chart Div -->
+    <div class = "chart"> <canvas id="myChart"></canvas> </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- JS here -->
+<!-- JS -->
+<script src="../static/js/reporting.js">
+
+
+{% endblock content %}
+

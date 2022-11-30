@@ -1,0 +1,4 @@
+DBNAME = "Team2DB"
+DBUSER = "Team2"
+DBPASS = "team2"
+DBHOST = "138.26.48.83"
